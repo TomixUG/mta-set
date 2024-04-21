@@ -28,7 +28,7 @@
     >
     {#if opened}
       <div
-        class="relative leading-normal text-green-700 bg-blue-100 rounded-lg mt-5 pt-2 pb-2 pl-4 pr-4"
+        class="relative leading-normal text-green-700 bg-gray-200 rounded-lg mt-5 pt-2 pb-2 pl-4 pr-4"
         role="alert"
       >
         <div class="flex flex-col items-center justify-center">

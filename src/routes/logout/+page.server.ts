@@ -5,6 +5,6 @@ import type { PageServerLoad } from "./$types";
 import constants from "$lib/constants";
 
 export const load: PageServerLoad = async ({ cookies }) => {
-  cookies.delete(constants.cookieName, { path: "/" });
+  cookies.delete(constants.cookieName, { path: "/", secure: false });
   redirect(302, "/auth");
 };

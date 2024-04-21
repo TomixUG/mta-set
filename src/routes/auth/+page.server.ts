@@ -17,7 +17,7 @@ export const actions: Actions = {
       console.log("login success");
       cookies.set(constants.cookieName, constants.token, {
         path: "/",
-        expires: new Date(Date.now() + 1000 * 60 * 60 * 24 * 365),
+        maxAge: 1000 * 60 * 60 * 24 * 365,
         secure: false,
       });
       redirect(302, "/");

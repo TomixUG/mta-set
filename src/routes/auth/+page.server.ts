@@ -18,6 +18,7 @@ export const actions: Actions = {
       cookies.set(constants.cookieName, constants.token, {
         path: "/",
         expires: new Date(Date.now() + 1000 * 60 * 60 * 24 * 365),
+        secure: false,
       });
       redirect(302, "/");
     } else {

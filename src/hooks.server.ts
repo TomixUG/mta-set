@@ -34,7 +34,7 @@ export const handle: Handle = async ({ event, resolve }) => {
       } catch (e) {
         console.log("server not up yet");
       }
-    }, 2000);
+    }, 5000);
   }
   return await resolve(event);
 };
